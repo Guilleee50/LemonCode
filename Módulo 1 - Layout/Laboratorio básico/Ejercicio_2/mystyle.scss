@@ -1,0 +1,55 @@
+@use "base" as *;
+//@use "base2" as *;
+
+body {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 150px;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 10px;
+  height: 100%vh;
+  width: 100%vw;
+  justify-items: center;
+}
+
+p {
+  text-align: center;
+}
+
+
+
+.container-1 {
+  width: 100%;
+  height: 100%;
+  background-color: $background-color-1;
+  align-content: center;
+}
+
+.container-2 {
+  width: 100%;
+  height: 100%;
+  background-color: $background-color-2;
+  align-content: center;
+}
+
+.container-3 {
+  width: 100%;
+  height: 100%;
+  background-color: $background-color-3;
+  align-content: center;
+}
+
+.principal-font {
+  font-family: $principal-font;
+}
+
+.secondary-font {
+  font-family: $secondary-font;
+}
+
+.box-with-shadow {
+  box-shadow: $box-shadow;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
