@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container-1 {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(1fr);
+  //grid-template-rows: repeat(3, 1fr); 
+}
+
+.container-2, .container-3, .container-4{
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+}
+
+@mixin generate-shades($color) {
+  $i: 0;
+  @while $i <= 9{
+    .lighten-#{$i} {
+      background-color: lighten($color, $i * 7%);
+    }
+
+    .darken-#{$i} {
+      background-color: darken($color, $i * 7%);
+    }
+
+    $i: $i + 1;
+  }
+}
+
+.container-2 {
+  background-color: red;
+  @include generate-shades(red);
+}
+
+.container-3 {
+  background-color: blue;
+  @include generate-shades(blue);
+}
+
+.container-4 {
+  background-color: green;
+  @include generate-shades(green);
+}
+
+.color-box-text {
+  color: white;
+  
+}
