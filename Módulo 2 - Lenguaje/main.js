@@ -16,5 +16,8 @@ const last = ([...args]) => {console.log("Ejercicio 4: " +  args.at(-1))};
 last(arr);
 
 // Ejercicio 5
-const concat = (a, b) => {console.log("Ejercicio 5: " +  a.concat(b))};
+const concat = (a, ...b) => {console.log("Ejercicio 5: " +  a.concat(b))};
 concat(arr, [6, 7, 8, 9, 10]);
+
+// Ejercicio 5.1
+const concat2 = () => {};
