@@ -1,5 +1,7 @@
-//Ejercicio 1
+// Array utilizada en los ejercicios
 let arr = [1, 2, 3, 4, 5];
+
+//Ejercicio 1
 const head = ([num]) => {console.log("Ejercicio 1: " +  num)};
 head(arr);
 
